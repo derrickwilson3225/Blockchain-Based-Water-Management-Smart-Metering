@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Water-Management-Smart-Metering'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.billing-automation]
+path = 'contracts/billing-automation.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.consumption-tracking]
+path = 'contracts/consumption-tracking.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
